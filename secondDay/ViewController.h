@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 extern NSString *const kParserURL;
-@interface ViewController : UIViewController <NSXMLParserDelegate>
+@interface ViewController : UIViewController <NSXMLParserDelegate ,UIPickerViewDelegate,UIPickerViewDataSource, UITextFieldDelegate>
 
 
 @end
