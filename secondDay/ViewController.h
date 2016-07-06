@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+extern NSString *const kParserURL;
 @interface ViewController : UIViewController <NSXMLParserDelegate>
 
 

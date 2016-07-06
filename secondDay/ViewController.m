@@ -9,9 +9,15 @@
 #import "ViewController.h"
 #import "XMLParserResult.h"
 
+
+ NSString *const kParserURL = @"http://www.cbr.ru/scripts/XML_daily.asp?date_req=%@";
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *labelUSD;
 @property (strong,nonatomic) XMLParserResult *parserResult;
+@property (weak, nonatomic) IBOutlet UILabel *labelEUR;
+@property (weak, nonatomic) IBOutlet UITextField *dataTextField;
 @property (strong,nonatomic) NSXMLParser *xmlParser;
+@property (strong,nonatomic) NSDate * currentDate;
 @property (weak, nonatomic) IBOutlet UITextField *leftValuteTextField;
 
 @end
@@ -22,14 +28,24 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.parserResult=[[XMLParserResult alloc]init];
-    UIDatePicker * dataPicker = [[UIDatePicker alloc]init];
-
-    dataPicker.backgroundColor=[UIColor lightGrayColor];
-    
-    self.leftValuteTextField.inputAccessoryView=dataPicker;
+    self.currentDate= [NSDate date];
+    [self configureDatePicker];
     [self sendGetExchangeRequest];
+    
     // Do any additional setup after loading the view, typically from a nib.
     
+}
+-(NSString *) stringFromDate:(NSDate *)date {
+    NSDateFormatter * dateFormatter = [[NSDateFormatter alloc]init];
+    [dateFormatter setDateFormat:@"dd/MM/yyyy"];
+    return [dateFormatter stringFromDate:date];
+}
+-(void) configureDatePicker{
+    UIDatePicker *datePicker = [[UIDatePicker alloc ] init];
+    datePicker.datePickerMode=UIDatePickerModeDate;
+    datePicker.backgroundColor = [UIColor lightGrayColor];
+    self.dataTextField.inputAccessoryView=datePicker;
+    [datePicker addTarget:self action:@selector(onDateValueChanged:) forControlEvents:UIControlEventValueChanged];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -41,7 +57,8 @@
 
 - (void)sendGetExchangeRequest{
     NSURLSession *session = [NSURLSession sharedSession];
-    NSURL *url = [[NSURL alloc]initWithString:@"http://www.cbr.ru/scripts/XML_daily.asp?date_req=28/06/2016"];
+    NSString * urlString = [NSString stringWithFormat:kParserURL,[self stringFromDate:self.currentDate]];
+    NSURL *url = [[NSURL alloc]initWithString:urlString];
     NSURLSessionDataTask *task =[session dataTaskWithURL:url completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         
         self.xmlParser= [[NSXMLParser alloc]initWithData:data];
@@ -58,14 +75,18 @@
     
     [task resume];
 }
-
-
-
-//- (void)printResultDictionary {
-//    [self.valutes enumerateKeysAndObjectsUsingBlock:^(NSString * _Nonnull key, NSNumber * _Nonnull obj, BOOL * _Nonnull stop) {
-//        NSLog(@"key: %@, value: %@", key, [obj stringValue]);
-//    }];
-//}
+-(void) onDateValueChanged:(id)sender{
+    self.currentDate=[(UIDatePicker *)sender date];
+    
+    
+    [self sendGetExchangeRequest];
+}
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    [super touchesBegan:touches withEvent:event];
+    [self.view endEditing:YES];
+    
+}
 
 -(void)awakeFromNib{
     [super awakeFromNib];

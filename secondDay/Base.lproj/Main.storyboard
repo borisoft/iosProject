@@ -139,6 +139,9 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="dataTextField" destination="f6M-71-Igp" id="zCl-SU-7yn"/>
+                        <outlet property="labelEUR" destination="LVX-Ok-Js2" id="rEc-G6-xwE"/>
+                        <outlet property="labelUSD" destination="gYk-sk-om8" id="Z9Z-nr-8VF"/>
                         <outlet property="leftValuteTextField" destination="TPp-61-8H9" id="ptr-4d-o2I"/>
                     </connections>
                 </viewController>
