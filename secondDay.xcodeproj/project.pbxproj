@@ -16,8 +16,8 @@
 		FA1AEADD1D2401F7009BDF79 /* secondDayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1AEADC1D2401F7009BDF79 /* secondDayTests.m */; };
 		FA1AEAE81D2401F7009BDF79 /* secondDayUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1AEAE71D2401F7009BDF79 /* secondDayUITests.m */; };
 		FA1AEAFB1D240975009BDF79 /* GreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1AEAF91D240975009BDF79 /* GreenViewController.m */; };
-		FA1AEB181D2533A9009BDF79 /* Factory.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1AEB171D2533A9009BDF79 /* Factory.m */; };
 		FA1AEB1B1D2554E9009BDF79 /* XMLParserResult.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1AEB1A1D2554E9009BDF79 /* XMLParserResult.m */; };
+		FAEBDF651D2E9EA100A2099B /* MankeyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAEBDF641D2E9EA100A2099B /* MankeyViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,10 +56,10 @@
 		FA1AEAE91D2401F7009BDF79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA1AEAF81D240975009BDF79 /* GreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GreenViewController.h; sourceTree = "<group>"; };
 		FA1AEAF91D240975009BDF79 /* GreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GreenViewController.m; sourceTree = "<group>"; };
-		FA1AEB161D2533A9009BDF79 /* Factory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Factory.h; sourceTree = "<group>"; };
-		FA1AEB171D2533A9009BDF79 /* Factory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Factory.m; sourceTree = "<group>"; };
 		FA1AEB191D2554E9009BDF79 /* XMLParserResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLParserResult.h; sourceTree = "<group>"; };
 		FA1AEB1A1D2554E9009BDF79 /* XMLParserResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLParserResult.m; sourceTree = "<group>"; };
+		FAEBDF631D2E9EA100A2099B /* MankeyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MankeyViewController.h; sourceTree = "<group>"; };
+		FAEBDF641D2E9EA100A2099B /* MankeyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MankeyViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,10 +121,10 @@
 				FA1AEAC21D2401F7009BDF79 /* Supporting Files */,
 				FA1AEAF81D240975009BDF79 /* GreenViewController.h */,
 				FA1AEAF91D240975009BDF79 /* GreenViewController.m */,
-				FA1AEB161D2533A9009BDF79 /* Factory.h */,
-				FA1AEB171D2533A9009BDF79 /* Factory.m */,
 				FA1AEB191D2554E9009BDF79 /* XMLParserResult.h */,
 				FA1AEB1A1D2554E9009BDF79 /* XMLParserResult.m */,
+				FAEBDF631D2E9EA100A2099B /* MankeyViewController.h */,
+				FAEBDF641D2E9EA100A2099B /* MankeyViewController.m */,
 			);
 			path = secondDay;
 			sourceTree = "<group>";
@@ -285,8 +285,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA1AEB181D2533A9009BDF79 /* Factory.m in Sources */,
 				FA1AEB1B1D2554E9009BDF79 /* XMLParserResult.m in Sources */,
+				FAEBDF651D2E9EA100A2099B /* MankeyViewController.m in Sources */,
 				FA1AEAFB1D240975009BDF79 /* GreenViewController.m in Sources */,
 				FA1AEACA1D2401F7009BDF79 /* ViewController.m in Sources */,
 				FA1AEAC71D2401F7009BDF79 /* AppDelegate.m in Sources */,

@@ -19,6 +19,7 @@
     self = [super init];
     if (self) {
         self.result=[[NSMutableDictionary alloc]init];
+        [self.result setObject:@1 forKey:@"RUB"];
     }
     return self;
 }
