@@ -17,6 +17,9 @@
 		FA1AEAE81D2401F7009BDF79 /* secondDayUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1AEAE71D2401F7009BDF79 /* secondDayUITests.m */; };
 		FA1AEAFB1D240975009BDF79 /* GreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1AEAF91D240975009BDF79 /* GreenViewController.m */; };
 		FA1AEB1B1D2554E9009BDF79 /* XMLParserResult.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1AEB1A1D2554E9009BDF79 /* XMLParserResult.m */; };
+		FA6C37DD1D36821F008A6B05 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA6C37DC1D36821F008A6B05 /* TableViewController.m */; };
+		FA6C37E01D3683D5008A6B05 /* NewsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA6C37DF1D3683D5008A6B05 /* NewsTableViewCell.m */; };
+		FA6C37E31D368D3D008A6B05 /* TextTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA6C37E21D368D3D008A6B05 /* TextTableViewCell.m */; };
 		FAEBDF651D2E9EA100A2099B /* MankeyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAEBDF641D2E9EA100A2099B /* MankeyViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +61,12 @@
 		FA1AEAF91D240975009BDF79 /* GreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GreenViewController.m; sourceTree = "<group>"; };
 		FA1AEB191D2554E9009BDF79 /* XMLParserResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLParserResult.h; sourceTree = "<group>"; };
 		FA1AEB1A1D2554E9009BDF79 /* XMLParserResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLParserResult.m; sourceTree = "<group>"; };
+		FA6C37DB1D36821F008A6B05 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		FA6C37DC1D36821F008A6B05 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		FA6C37DE1D3683D5008A6B05 /* NewsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsTableViewCell.h; sourceTree = "<group>"; };
+		FA6C37DF1D3683D5008A6B05 /* NewsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsTableViewCell.m; sourceTree = "<group>"; };
+		FA6C37E11D368D3D008A6B05 /* TextTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextTableViewCell.h; sourceTree = "<group>"; };
+		FA6C37E21D368D3D008A6B05 /* TextTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextTableViewCell.m; sourceTree = "<group>"; };
 		FAEBDF631D2E9EA100A2099B /* MankeyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MankeyViewController.h; sourceTree = "<group>"; };
 		FAEBDF641D2E9EA100A2099B /* MankeyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MankeyViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -90,6 +99,8 @@
 		FA1AEAB61D2401F7009BDF79 = {
 			isa = PBXGroup;
 			children = (
+				FA6C37DB1D36821F008A6B05 /* TableViewController.h */,
+				FA6C37DC1D36821F008A6B05 /* TableViewController.m */,
 				FA1AEAC11D2401F7009BDF79 /* secondDay */,
 				FA1AEADB1D2401F7009BDF79 /* secondDayTests */,
 				FA1AEAE61D2401F7009BDF79 /* secondDayUITests */,
@@ -115,6 +126,10 @@
 				FA1AEAC81D2401F7009BDF79 /* ViewController.h */,
 				FA1AEAC91D2401F7009BDF79 /* ViewController.m */,
 				FA1AEACB1D2401F7009BDF79 /* Main.storyboard */,
+				FA6C37E11D368D3D008A6B05 /* TextTableViewCell.h */,
+				FA6C37E21D368D3D008A6B05 /* TextTableViewCell.m */,
+				FA6C37DE1D3683D5008A6B05 /* NewsTableViewCell.h */,
+				FA6C37DF1D3683D5008A6B05 /* NewsTableViewCell.m */,
 				FA1AEACE1D2401F7009BDF79 /* Assets.xcassets */,
 				FA1AEAD01D2401F7009BDF79 /* LaunchScreen.storyboard */,
 				FA1AEAD31D2401F7009BDF79 /* Info.plist */,
@@ -290,6 +305,9 @@
 				FA1AEAFB1D240975009BDF79 /* GreenViewController.m in Sources */,
 				FA1AEACA1D2401F7009BDF79 /* ViewController.m in Sources */,
 				FA1AEAC71D2401F7009BDF79 /* AppDelegate.m in Sources */,
+				FA6C37DD1D36821F008A6B05 /* TableViewController.m in Sources */,
+				FA6C37E01D3683D5008A6B05 /* NewsTableViewCell.m in Sources */,
+				FA6C37E31D368D3D008A6B05 /* TextTableViewCell.m in Sources */,
 				FA1AEAC41D2401F7009BDF79 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
