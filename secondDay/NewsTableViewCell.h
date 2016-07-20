@@ -12,5 +12,6 @@
 @interface NewsTableViewCell : BaseTableViewCell
 @property (weak, nonatomic) IBOutlet UILabel *newsShortText;
 @property (weak, nonatomic) IBOutlet UIImageView *previewImageView;
+@property (strong, nonatomic) IBOutletCollection(UILabel) NSArray *fullTextLabel;
 
 @end
