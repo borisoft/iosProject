@@ -20,6 +20,12 @@
 		FA6C37DD1D36821F008A6B05 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA6C37DC1D36821F008A6B05 /* TableViewController.m */; };
 		FA6C37E01D3683D5008A6B05 /* NewsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA6C37DF1D3683D5008A6B05 /* NewsTableViewCell.m */; };
 		FA6C37E31D368D3D008A6B05 /* TextTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA6C37E21D368D3D008A6B05 /* TextTableViewCell.m */; };
+		FA6C382E1D37CBB2008A6B05 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA6C382C1D37CBB2008A6B05 /* TableViewCell.m */; };
+		FA6C382F1D37CBB2008A6B05 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA6C382D1D37CBB2008A6B05 /* TableViewCell.xib */; };
+		FA6C38331D37D961008A6B05 /* CellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FA6C38321D37D961008A6B05 /* CellModel.m */; };
+		FA6C38361D37E1CE008A6B05 /* BaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA6C38351D37E1CE008A6B05 /* BaseTableViewCell.m */; };
+		FA6C38A81D3AD717008A6B05 /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA6C38A71D3AD717008A6B05 /* CollectionViewController.m */; };
+		FA6C38AB1D3ADA88008A6B05 /* Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA6C38AA1D3ADA88008A6B05 /* Cell.m */; };
 		FAEBDF651D2E9EA100A2099B /* MankeyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAEBDF641D2E9EA100A2099B /* MankeyViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -67,6 +73,17 @@
 		FA6C37DF1D3683D5008A6B05 /* NewsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsTableViewCell.m; sourceTree = "<group>"; };
 		FA6C37E11D368D3D008A6B05 /* TextTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextTableViewCell.h; sourceTree = "<group>"; };
 		FA6C37E21D368D3D008A6B05 /* TextTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextTableViewCell.m; sourceTree = "<group>"; };
+		FA6C382B1D37CBB2008A6B05 /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
+		FA6C382C1D37CBB2008A6B05 /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
+		FA6C382D1D37CBB2008A6B05 /* TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		FA6C38311D37D961008A6B05 /* CellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellModel.h; sourceTree = "<group>"; };
+		FA6C38321D37D961008A6B05 /* CellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellModel.m; sourceTree = "<group>"; };
+		FA6C38341D37E1CE008A6B05 /* BaseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableViewCell.h; sourceTree = "<group>"; };
+		FA6C38351D37E1CE008A6B05 /* BaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewCell.m; sourceTree = "<group>"; };
+		FA6C38A61D3AD717008A6B05 /* CollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewController.h; sourceTree = "<group>"; };
+		FA6C38A71D3AD717008A6B05 /* CollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewController.m; sourceTree = "<group>"; };
+		FA6C38A91D3ADA88008A6B05 /* Cell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cell.h; sourceTree = "<group>"; };
+		FA6C38AA1D3ADA88008A6B05 /* Cell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cell.m; sourceTree = "<group>"; };
 		FAEBDF631D2E9EA100A2099B /* MankeyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MankeyViewController.h; sourceTree = "<group>"; };
 		FAEBDF641D2E9EA100A2099B /* MankeyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MankeyViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -99,6 +116,7 @@
 		FA1AEAB61D2401F7009BDF79 = {
 			isa = PBXGroup;
 			children = (
+				FA6C38A51D3AD6E6008A6B05 /* collectionsView */,
 				FA6C37DB1D36821F008A6B05 /* TableViewController.h */,
 				FA6C37DC1D36821F008A6B05 /* TableViewController.m */,
 				FA1AEAC11D2401F7009BDF79 /* secondDay */,
@@ -121,6 +139,7 @@
 		FA1AEAC11D2401F7009BDF79 /* secondDay */ = {
 			isa = PBXGroup;
 			children = (
+				FA6C38301D37D93B008A6B05 /* MODELS */,
 				FA1AEAC51D2401F7009BDF79 /* AppDelegate.h */,
 				FA1AEAC61D2401F7009BDF79 /* AppDelegate.m */,
 				FA1AEAC81D2401F7009BDF79 /* ViewController.h */,
@@ -140,6 +159,11 @@
 				FA1AEB1A1D2554E9009BDF79 /* XMLParserResult.m */,
 				FAEBDF631D2E9EA100A2099B /* MankeyViewController.h */,
 				FAEBDF641D2E9EA100A2099B /* MankeyViewController.m */,
+				FA6C382B1D37CBB2008A6B05 /* TableViewCell.h */,
+				FA6C382C1D37CBB2008A6B05 /* TableViewCell.m */,
+				FA6C382D1D37CBB2008A6B05 /* TableViewCell.xib */,
+				FA6C38341D37E1CE008A6B05 /* BaseTableViewCell.h */,
+				FA6C38351D37E1CE008A6B05 /* BaseTableViewCell.m */,
 			);
 			path = secondDay;
 			sourceTree = "<group>";
@@ -168,6 +192,26 @@
 				FA1AEAE91D2401F7009BDF79 /* Info.plist */,
 			);
 			path = secondDayUITests;
+			sourceTree = "<group>";
+		};
+		FA6C38301D37D93B008A6B05 /* MODELS */ = {
+			isa = PBXGroup;
+			children = (
+				FA6C38311D37D961008A6B05 /* CellModel.h */,
+				FA6C38321D37D961008A6B05 /* CellModel.m */,
+			);
+			name = MODELS;
+			sourceTree = "<group>";
+		};
+		FA6C38A51D3AD6E6008A6B05 /* collectionsView */ = {
+			isa = PBXGroup;
+			children = (
+				FA6C38A61D3AD717008A6B05 /* CollectionViewController.h */,
+				FA6C38A71D3AD717008A6B05 /* CollectionViewController.m */,
+				FA6C38A91D3ADA88008A6B05 /* Cell.h */,
+				FA6C38AA1D3ADA88008A6B05 /* Cell.m */,
+			);
+			name = collectionsView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,6 +318,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA1AEAD21D2401F7009BDF79 /* LaunchScreen.storyboard in Resources */,
+				FA6C382F1D37CBB2008A6B05 /* TableViewCell.xib in Resources */,
 				FA1AEACF1D2401F7009BDF79 /* Assets.xcassets in Resources */,
 				FA1AEACD1D2401F7009BDF79 /* Main.storyboard in Resources */,
 			);
@@ -300,15 +345,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA6C38361D37E1CE008A6B05 /* BaseTableViewCell.m in Sources */,
 				FA1AEB1B1D2554E9009BDF79 /* XMLParserResult.m in Sources */,
+				FA6C38331D37D961008A6B05 /* CellModel.m in Sources */,
 				FAEBDF651D2E9EA100A2099B /* MankeyViewController.m in Sources */,
 				FA1AEAFB1D240975009BDF79 /* GreenViewController.m in Sources */,
+				FA6C382E1D37CBB2008A6B05 /* TableViewCell.m in Sources */,
 				FA1AEACA1D2401F7009BDF79 /* ViewController.m in Sources */,
 				FA1AEAC71D2401F7009BDF79 /* AppDelegate.m in Sources */,
 				FA6C37DD1D36821F008A6B05 /* TableViewController.m in Sources */,
 				FA6C37E01D3683D5008A6B05 /* NewsTableViewCell.m in Sources */,
+				FA6C38A81D3AD717008A6B05 /* CollectionViewController.m in Sources */,
 				FA6C37E31D368D3D008A6B05 /* TextTableViewCell.m in Sources */,
 				FA1AEAC41D2401F7009BDF79 /* main.m in Sources */,
+				FA6C38AB1D3ADA88008A6B05 /* Cell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

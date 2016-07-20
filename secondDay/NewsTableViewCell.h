@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BaseTableViewCell.h"
 
-@interface NewsTableViewCell : UITableViewCell
+@interface NewsTableViewCell : BaseTableViewCell
 @property (weak, nonatomic) IBOutlet UILabel *newsShortText;
 @property (weak, nonatomic) IBOutlet UIImageView *previewImageView;
 

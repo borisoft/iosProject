@@ -10,4 +10,13 @@
 
 @implementation NewsTableViewCell
 
+-(void)prepareForReuse{
+    [super prepareForReuse];
+    self.backgroundColor = [UIColor whiteColor];
+}
+-(void)setModel:(CellModel *)model{
+    [super setModel:model];
+    self.newsShortText.text=model.text;
+    self.previewImageView.image = model.image;
+}
 @end
